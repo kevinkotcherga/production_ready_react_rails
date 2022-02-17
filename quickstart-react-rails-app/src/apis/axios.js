@@ -5,7 +5,7 @@ axios.defaults.baseURL = '/';
 
 export const setAuthHeaders = (setLoading = () => null) => {
   axios.defaults.headers = {
-    Accept: 'applicaion/json',
+    Accept: 'application/json',
     'Content-Type': 'application/json',
   };
   const token = JSON.parse(localStorage.getItem('authToken'));
